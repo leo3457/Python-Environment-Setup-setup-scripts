@@ -1,8 +1,8 @@
-⚙️ Windows Python Dev Setup (Config Repo)
+##⚙️ Windows Python Dev Setup (Config Repo)
 
 This repository contains my personal configuration files and setup scripts for quickly bootstrapping a Python development environment on Windows. Instead of manually installing tools and adjusting settings on every new machine, I keep everything version-controlled here for easy reuse.
 
-🔹 What’s Inside
+#🔹 What’s Inside
 
 PowerShell profile (Microsoft.PowerShell_profile.ps1)
 Custom aliases, functions, and prompt settings for a smoother CLI experience.
@@ -16,7 +16,7 @@ Automates installation of essential tools (Python via pyenv, Git, VS Code, Choco
 Notes & snippets
 A personal “cookbook” of commands and scripts I use often when setting up or troubleshooting.
 
-🔹 Usage
+#🔹 Usage
 
 On a fresh Windows machine:
 
@@ -31,7 +31,7 @@ iwr -useb https://raw.githubusercontent.com/<USER>/<REPO>/main/install.ps1 | iex
 
 Restart PowerShell to apply profile changes.
 
-🔹 Why?
+#🔹 Why?
 
 ⏱️ Faster setup — get coding in minutes, not hours
 

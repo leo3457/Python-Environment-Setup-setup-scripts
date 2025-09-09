@@ -1,40 +1,35 @@
-#⚙️ Windows Python Dev Setup (Config Repo)
+# ⚡ Configuration Repository
 
-This repository contains my personal configuration files and setup scripts for quickly bootstrapping a Python development environment on Windows. Instead of manually installing tools and adjusting settings on every new machine, I keep everything version-controlled here for easy reuse.
+This repository contains my personal setup files and scripts for quickly configuring a new Windows development environment.  
+Instead of manually reinstalling tools and tweaking settings on every machine, I can clone this repo and run the scripts to get everything set up in minutes.
 
-#🔹 What’s Inside
+---
 
-PowerShell profile (Microsoft.PowerShell_profile.ps1)
-Custom aliases, functions, and prompt settings for a smoother CLI experience.
+## 📂 Contents
+- **PowerShell Profile** (`Microsoft.PowerShell_profile.ps1`)  
+  Custom aliases, functions, and shortcuts to streamline command-line work.
 
-Git configuration (.gitconfig)
-Global Git username, email, and other preferences.
+- **Git Config** (`.gitconfig`)  
+  Global Git configuration (username, email, aliases, defaults).
 
-Setup scripts (install.ps1)
-Automates installation of essential tools (Python via pyenv, Git, VS Code, Chocolatey packages).
+- **Install Script** (`install.ps1`)  
+  Automated script to install core developer tools using [Chocolatey](https://chocolatey.org/).  
+  Tools include:
+  - Python (via pyenv-win)
+  - Git
+  - VS Code
+  - PowerShell Core
+  - Other essentials
 
-Notes & snippets
-A personal “cookbook” of commands and scripts I use often when setting up or troubleshooting.
+- **Notes & Snippets**  
+  Additional commands and snippets I commonly use when setting up a dev environment.
 
-#🔹 Usage
+---
 
-On a fresh Windows machine:
+## 🚀 Quick Start
 
-Open PowerShell as Administrator.
-
-Run the setup script directly from GitHub:
-
-iwr -useb https://raw.githubusercontent.com/<USER>/<REPO>/main/install.ps1 | iex
-
-
-(Replace <USER>/<REPO> with your GitHub repo name.)
-
-Restart PowerShell to apply profile changes.
-
-#🔹 Why?
-
-⏱️ Faster setup — get coding in minutes, not hours
-
-🔄 Consistency — same environment across machines
-
-🛠️ Customization — preconfigured Git, Python versions, aliases, and tools
+### 1. Install Chocolatey (if not already installed)
+Open PowerShell as Administrator and run:
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope Process
+iwr -useb https://community.chocolatey.org/install.ps1 | iex
